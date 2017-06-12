@@ -1,0 +1,21 @@
+#!/bin/bash
+
+serviceUser="oss"
+serviceUserHome="/home/$serviceUser"
+serviceBaseHome="$serviceUserHome/oss"
+
+# script properties
+serviceLogFile="$serviceBaseHome/log/$1.log"   # log file for StdOut/StdErr
+
+# java properties
+JAVA_HOME="/usr/java/latest"
+libDir="serviceBaseHome/lib"
+javaCommand="java"
+javaExe="$JAVA_HOME/bin/$javaCommand"
+javaJar="-jar $libDir/$1.jar"
+javaCommandLine=$javaExe $javaJar"
+
+
+#run the comment
+nohup $javaCommandLine >>$serviceLogFile 2>&1 &
+

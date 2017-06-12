@@ -1,0 +1,53 @@
+#!/bin/bash
+#
+# ossRun
+# description: ObjectServerStore java deamon Script to start and stop OSS
+#
+# History:
+#
+#
+
+# local environment properties
+ossHome="$HOME/oss"
+ossName="oss"
+
+# script properties
+serviceLogFile="$ossHome/log/ossRun"
+maxShutdownTime=15
+pidDir="$ossHome/run/pid"
+
+# java properties
+JAVA_HOME=/usr/java/latest
+ossLib="/usr/local/lib/objectStore/ObjectStore.jar"
+oscLib="/usr/local/lib/nioShutdownClient/NioShutdownClient.jar"
+javaCommand="java"
+javaExe="$JAVA_HOME/bin/$javaCommand" 
+
+case "$1" in
+  start)
+    javaJar="-jar $ossLib"
+    javaArgs="-rootdir $ossHome/data"
+    javaStartCommand="$javaExe $javaJar $javaArgs"
+    $javaStartCommand -logconfig $ossHome/conf/oss1_4j.properties -port 20667 >>$serviceLogFile_oss1.log 2>&1 & echo \$! >$pidDir_oss1.pid
+    sleep 2
+    $javaStartCommand -logconfig $ossHome/conf/oss2_4j.properties -port 20668 >>$serviceLogFile_oss2.log 2>&1 & echo \$! >$pidDir_oss2.pid
+    sleep 2
+    $javaStartCommand -logconfig $ossHome/conf/oss3_4j.properties -port 20669 >>$serviceLogFile_oss3.log 2>&1 & echo \$! >$pidDir_oss3.pid
+    ;;
+  stop)
+    javaJar="-jar $oscLib"
+    javaArgs="-shutdown -port 20667 -range 3 -rootdir $ossHome/data -logconfig $ossHome/conf/osc4j.properties"
+    javaStopCommand="$javaExe  $javaJar $javaArgs"
+    nohup $javaStopCommand >> $serviceLogFile_osc.log 2>&1
+    ;;
+  status)
+    javaJar="-jar $oscLib"
+    javaArgs=" -port 20667 -range 3 -rootdir $ossHome/data -logconfig $ossHome/conf/osc4j.properties"
+    javaStopCommand="$javaExe  $javaJar $javaArgs"
+    nohup $javaStopCommand >> $serviceLogFile_osc.log 2>&1
+    ;;
+  *)
+     echo "Usage: $0 {start|stop|status}"
+     exit 1
+     ;;
+  esac

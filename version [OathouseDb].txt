@@ -1,0 +1,894 @@
+============================================
+        Project Name = OathouseDb
+============================================
+
+Release Version: @major@.@minor@.@iteration@  [@date@]
+=============================================
+[RELEASE SUMMARY]
+Iteration build.
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+            
+Release Version: 3.02.032  [2016-04-01 21:52]
+=============================================
+[RELEASE SUMMARY]
+Iteration build.
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+            
+Release Version: 3.02.031  [2016-03-11 13:45]
+=============================================
+[RELEASE SUMMARY]
+Iteration build.
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+            
+Release Version: 3.02.030  [2016-03-11 11:48]
+=============================================
+[RELEASE SUMMARY]
+Iteration build.
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+            
+Release Version: 3.02.029  [2015-11-24 22:03]
+=============================================
+[RELEASE SUMMARY]
+Iteration build.
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+            
+Release Version: 3.02.028  [2015-04-09 19:20]
+=============================================
+[RELEASE SUMMARY]
+Iteration build.
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+            
+Release Version: 3.02.027  [2015-03-23 17:32]
+=============================================
+[RELEASE SUMMARY]
+Iteration build.
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+            
+Release Version: 3.02.026  [2015-03-14 23:15]
+=============================================
+[RELEASE SUMMARY]
+Iteration build.
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+            
+Release Version: 3.02.025  [2015-03-08 17:22]
+=============================================
+[RELEASE SUMMARY]
+Iteration build.
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+            
+Release Version: 3.02.024  [2014-12-07 16:23]
+=============================================
+[RELEASE SUMMARY]
+Iteration build.
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+            
+Release Version: 3.02.023  [2014-10-01 10:54]
+=============================================
+[RELEASE SUMMARY]
+Iteration build.
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+            
+Release Version: 3.02.022  [2014-10-01 10:53]
+=============================================
+[RELEASE SUMMARY]
+Iteration build.
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+            
+Release Version: 3.02.016  [2014-04-01 20:32]
+=============================================
+[RELEASE SUMMARY]
+Iteration build.
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+            
+Release Version: 3.02.015  [2014-04-01 16:56]
+=============================================
+[RELEASE SUMMARY]
+Iteration build.
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+            
+Release Version: 3.02.014  [2014-01-24 10:05]
+=============================================
+[RELEASE SUMMARY]
+Iteration build.
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+            
+Release Version: 3.02.013  [2014-01-23 15:34]
+=============================================
+[RELEASE SUMMARY]
+Iteration build.
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+            
+Release Version: 3.02.012  [2014-01-22 14:29]
+=============================================
+[RELEASE SUMMARY]
+Iteration build.
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+            
+Release Version: 3.02.011  [2013-10-03 09:02]
+=============================================
+[RELEASE SUMMARY]
+Minor build change from error message to log warning for Archive Ywd change
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+
+Release Version: 3.02.009  [2013-07-28 13:18]
+=============================================
+[RELEASE SUMMARY]
+- Archiving
+    - archiveYwd set todays date when removing objects or keys
+    - archiveYwd set back to zero when reinstated
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+
+Release Version: 3.02.007  [2013-07-08 09:41]
+=============================================
+[RELEASE SUMMARY]
+- Archiving
+    - managers have an aditional ObjectDataOptionsEnum of ARCHIVE
+    - when in ARCHIVE mode,
+        - all objects are mirrored to an archive folder
+        - set methods automatically archive
+        - get methods have the option to also include archive search
+        - remove methods only remove from live and not archive
+    - additional methods:
+        - reinstateArchiveKey()
+        - reinstateArchiveObject()
+        - removeOldObjectsInArchive()
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+
+Release Version: 3.02.005  [2013-06-10 20:20]
+=============================================
+[RELEASE SUMMARY]
+Minor addition of getToday() in CalendarStatic
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+
+Release Version: 3.02.004  [2013-05-30 10:54]
+=============================================
+[RELEASE SUMMARY]
+Minor Build to update third party libraries and some minor tidies
+- key change from jdom1 to jdom2
+
+[RELEASE NOTES]
+- the build.xml script has an added copyDir to create a backup of the release
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+
+Release Version: 3.01.011  [2013-05-06 11:37]
+=============================================
+[RELEASE SUMMARY]
+Iteration build.
+- Change to the BuildBeanTester to test groupKey parameter
+- Change ObjectBean.getGroupKey() to public
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+=============================================
+
+Release Version: 3.01.001  [2013-04-03 11:02]
+=============================================
+[RELEASE SUMMARY]
+Major Build for addition of ARCHIVE:
+- all base get methods have ObjectDataOptionsEnum ellipsis
+- sets automatically save to archive
+- gets have options to also include archive.
+
+- update ObjectSetBean
+    - add protected set methods
+
+- Update ObjectDBMS
+    - refactor cloneObjectBean() now takes a new identifier
+- Update CalendarHelper & CalendarStatic
+    - add getSDFromTimestamp(...)
+
+- update SDHolder
+    - add buildSd override to take 24 hour string times
+
+- update ObjectStorageEnum
+    - add PRINTED where the XML is trimmed and the ObjectBean name in simple format
+
+- update ObjectBean
+    refactor toXML()
+        - the different format options were not working
+        - added PRINTED format
+
+- Refactor ObjectDBMS
+    - refactor the Storage behaviour for the ObjectBean
+    - Changed the constructor to take a list of 0..n ObjectStorageEnum
+
+- Add ObjectStorageEnum
+    - all the behaviour associated with storing ObjectBean
+
+- Refactor ObjectEnum
+    - Took out the all the references to Storage types
+
+- Add SimpleStringCipher
+    - encrypts and decrypts a string
+    - use to encrypt ObjectStore XMLfiles
+
+- Refactor OssProperties
+    - removed the prettyPrint attribute
+    - added 6 character Cipher key
+
+[RELEASE NOTES]
+none.
+
+[TESTING SUMMARY]
+complete.
+
+[TESTING NOTES]
+none.
+_____________________________________________
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.049
+==========================
+
+- Update ObjectDBMS
+    - refactored the number generators to include a reserve time for newly generated identifiers
+    - this allows generated numbers to be held for a specified time before being recycled if not used
+    - the default value is set to 300 miliseconds.
+    - this has NO impact on the use of identifiers directly to ObjectBeans
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.048
+==========================
+
+- Update YWDHolder
+    - added constants to match autobox constants
+        - YWD_MAX - a YWD well into the future
+        - YWD_MIN - a date in the past (1st Jan 1970)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.047
+==========================
+- Update BuildBeanTester
+    - add testOrder()
+        -utility method to test the order of object beans
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.046
+==========================
+- Update BuildBeanTester
+    - owner can now be set
+    - default to ObjectBean.SYSTEM_OWNED
+
+- Update YWDHolder
+    - added constant DAYS_IN_WEEK
+        - this is useful when doing day loops to make the code readable
+        - avoids using a meaningless 7.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.045
+==========================
+- Update BuildBeanTester
+    - Add ability to model boolean[].
+        - when modelling use a String of true/false separated by comma(,) and no spaces
+        - example "true,true,false,true,false,false,false"
+        - the number of elements does not have to be the same as underlying array.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.044
+==========================
+
+- Update SDHolder
+    - Add intersectSd
+        - provides the intersection of two periodSd
+    - add adjustDuration
+        - adjust the duration either positive or negative of a periodSd
+
+- update SDBits
+    - Add AT_LEAST
+    - Add AT_MOST
+    - Add SOME_PART
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.043
+==========================
+
+
+- Update ObjectEnum
+    - for clarity added DEFAULT_VALUE which is 0
+
+- Update ObjectBean
+    - change default of ywdArchive to DEFAULT_VALUE
+
+- update SDHolder
+    - corrected error in all the Javadocs
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.039
+==========================
+- Update ObjectDBMS
+    - Update resetDefaultObject()
+        - automatically set the identifier to be DEFAULT_ID
+
+- Update ObjectBean
+    - add isDefaultId()
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.038
+==========================
+
+ - Update ObjectDBMS
+    - refactor clear()
+        - Don't need to check if memory, just clear it if it is not null.
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.037
+==========================
+
+- update SDHolder()
+    - add getPeriodSdSplits()
+    - refactor getTimeSplits()
+    - add getTimeSet()
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.036
+==========================
+
+- Update ObjectSetBean
+    - setXMLDOM() minor change to code logic
+
+- Update SDHolder
+    - refactor getTimeSplits()
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.035
+==========================
+
+- create CalendarStatic
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.033
+==========================
+
+- Issue 419 (tidy javadocs)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.032
+==========================
+- update CalendarHelper
+    - override getRelativeYw()
+    - override getRelativeYwd()
+
+- update YWDHolder
+    - remove offsetDays()
+    - remove offsetWeeks()
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.031
+==========================
+
+- update BuilderBean
+    - add constant MON_SUN
+
+- update YWDHolder
+    - add offsetDays()
+    - add offsetWeeks()
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.030
+==========================
+
+- add cloneObjectBean();
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.029
+==========================
+
+- issue 304
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.028
+==========================
+- update SDHolder
+    - add non static getEndOut()
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.027
+==========================
+- update SDHolder
+    - Add hasOverlap() method
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.026
+==========================
+- update SDHolder
+    - Add getStartOut() method
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.025
+==========================
+- Update ObjectDBMS
+    - refactor generateIdentifier()
+        - now only gets the highestId
+    - add regenerateIdentifier()
+        - reuses ids
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.020
+==========================
+- update AbstractBits
+    - remove flip()
+    - add turnOn()
+    - add turnOff()
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.018
+==========================
+- update AbstractBits
+    - added FILTER masks
+    - added isBits() method
+    - added getBitsAsString() for base constants
+    - added getBitsFromString() for base constants
+    - tested
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.016
+==========================
+
+- update ObjectMapStore
+    - refactor getObjectKey()
+        - rename to getAllKeysForIdentifier()
+        - returns a more useful set of all keys
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.015
+==========================
+
+- add ObjectStoreException
+    - Extends OathouseException
+    - is the parent of all Exceptions
+    - put in place to delete Oathouse Exception
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.014
+==========================
+
+- update YWDHolder
+    - add getYwdFromDays()
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.013
+==========================
+- update BeanBuilder
+    - add dayBuilder constants
+
+- update AbstractBits
+    include a protected constructor
+
+- update ObjectDBMS
+    - refactor init()
+        - now returns the instance so as to chain initialisation
+        - e.g ChildService childService = new ChildService("childManager").init();
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.09
+==========================
+- update SDHolder
+    - add getSDIn()
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.008
+==========================
+- update SDHolder
+    - add buildSDIn()
+    - add getDurationOut()
+    - add getEndOut()
+
+- update AbstractBits
+    - reset NO_MASK = 0
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.007
+==========================
+- update AbstractBits
+    - add getBits()
+
+- refactor SDBits
+    - change all + to |
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.006
+==========================
+- refactor AbstractBits
+    - remove the ALL and MASK constants
+
+- Update ObjectBean
+    - add static SYSTEM_OWNED
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.004
+==========================
+- update ObjectBean
+    - refactor setOwner()
+        - now throws IllegalArgumentException()
+        - you must have a value in owner
+    - refactor Constructors
+        - now set Owner by calling setOwner()
+    - refactor all set methods
+        - now all final so they can't be overridden.
+
+- update ObjectMapStore
+    - new constructor override
+        - now can set storeType
+        - allows PERSISTENT_ONLY maps
+
+- update ObjectSetStore
+    - new constructor override
+        - now can set storeType
+        - allows PERSISTENT_ONLY sets
+
+- removed ObjectPersistMapStore
+    - replaced by ObjectMapStore() new constructor
+
+- removed ObjectPersistSetStore
+    - replaced by ObjectSetStore() new constructor
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.04.003
+==========================
+
+- minor version number change
+    - avoid confusion with a branch development
+
+- Refactor SDHolder
+    - changed spanSD back to addSD
+        - takes the start of the first and end of the second
+        - bad call changing it
+    - add spanSD that take the lowest start and longest duration from two periodSd
+    - removed all references to RangeCompareEnum
+    - replaced RangeCompareEnum with SDBits
+    - add splitSd()
+    - add linkInSd()
+    - add overlaps()
+    - add buildSd()
+
+- Remove RangeCompareEnum
+
+- Add AbstractBits
+    - an abstract class for all Bit classes
+
+- Add SDBits
+    - bits for comparing two periodSd used in conjunction with SDHolder
+
+- Update ObjectDBMS
+    - add getAllManagers()
+        - allows validation of current managers.
+    - rename getAuthorities to getAllAuthorities
+    - add getManager()
+    - add getAuthority
+    - included basic method entry Debug logging to each of the method calls
+    - included trace level return values
+
+- Update FileRequestHandler
+    - Tidy up the trace logging
+
+- Refactor BuildBeanTester
+    - added a bit more info to the assertion failures
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.03.030
+==========================
+
+- Update RangeCompareEnum
+    - Add START_BEFORE_END_LINK (end one before from next)
+    - Add START_LINK_END_AFTER (starts one after next
+
+- Update SDHolder
+    - change addSD() to spanSD as this spans across to periodSd from start of one to end of next
+    - change cutSD() to fitInSD()
+        - cutSD didn't seem to do what the javadocs said
+        - the returned fitInSd values are +/- 1 from the baseSd
+
+- Create ObjectPersistSetStore
+    - extends ObjectSetStore to be PERSISTENT_ONLY
+
+- Create ObjectPersistMapStore
+    - extends ObjectMapStore to be PERSISTENT_ONLY
+
+- Update ObjectBean
+    - Added archiveYWD attribute with get() and set()
+    - changed XML getAttribute() default from String "-1" to ObjectEnum INITALISATION value
+
+- Create IDHolder class
+    - used to convert and create longId values made up of a ywd and identifier int.
+    - tested with new test file
+
+- SDHolder
+    - add static method getSD0() to return a periodSd with zero duration
+    - minor update to comment on cutSD() method
+
+- Update ObjectEnum
+    - Add PERSIST_ONLY(-7)
+    - Change isMemory() to include all memory enumerations not just MEMORY_ONLY
+    - Add isPersist() to test for all enumerations with persist
+
+- Update ObjectDB
+    - Refactor name to ObjectDBMS
+    - rewrite the logic of storeType so as to include PERSIST_ONLY and bypass the objectMap data store
+    - replace the current storeType logic to use isMemory and isPersist better.
+    - add checks to the Order methods to check they are only ORDER enumeration storeType
+    - update rebuildOrderBean() to directly read from File handler and not the internal getAllIdentifiers() method
+    - minor tidy of comments
+
+- Update build.xml
+    - change the build script so it produces a version numbered release in addition to 'lastest'
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.03.019
+==========================
+
+- Update FileRequestHandler
+    - Add static method clearAuthority()
+    - update remove() for better return logic on success
+
+- Update ObjectDB
+    - Add static method clearAuthority()
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.03.018
+==========================
+
+- Bug Fix
+    - added synchronise to clear() to attempt to help multi threaded calls.
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Version Release = 2.03.017
+==========================
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -12,7 +12,7 @@ import java.util.TimeZone;
  * reference to YWDHolder and SDHOlder and to deal with conversion of
  * ywd to Calendar/timestamp and vice versa.
  *
- * @author Nick Maunder
+ * @author Darryl Oatridge
  * @version 2.01 29-08-2010
  */
 public class CalendarHelper {
